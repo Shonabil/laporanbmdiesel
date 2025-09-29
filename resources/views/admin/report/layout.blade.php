@@ -64,6 +64,36 @@
                 </a>
             </nav>
         </div>
+
+                <!-- Dropdown Dashboard -->
+        <div x-data="{ open: false }">
+            <!-- Button -->
+            <button @click="open = !open"
+                class="w-full flex items-center justify-between px-3 py-2 rounded hover:bg-blue-600 hover:text-white text-gray-400">
+                <span class="flex items-center">
+                    <i class="fas fa-layer-group w-5 mr-2"></i> Print
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     :class="{ 'rotate-180': open }"
+                     class="h-4 w-4 transition-transform"
+                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <!-- Dropdown Items -->
+            <nav x-show="open" x-transition class="ml-4 mt-2 flex flex-col space-y-2">
+                <a href="{{ route('admin.report.index') }}"
+                   class="px-3 py-2 rounded hover:bg-blue-600 hover:text-white {{ request()->is('admin/report*') ? 'bg-blue-500 text-white' : 'text-gray-400' }}">
+                   <i class="fas fa-file-alt w-5 mr-2"></i> Print PDF
+                </a>
+                  <a href="{{ route('admin.report.index') }}"
+                   class="px-3 py-2 rounded hover:bg-blue-600 hover:text-white {{ request()->is('admin/report*') ? 'bg-blue-500 text-white' : 'text-gray-400' }}">
+                   <i class="fas fa-file-alt w-5 mr-2"></i> Print Invoice
+                </a>
+            </nav>
+        </div>
     </aside>
 
 

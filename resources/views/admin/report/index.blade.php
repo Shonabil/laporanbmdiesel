@@ -59,132 +59,132 @@
                         <svg class="w-4 h-4 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path>
                         </svg>
-                        Repair Order No
+                        No
                     </label>
                     <input type="text" name="repair_order_no" value="{{ old('repair_order_no') }}"
                         class="w-full border border-gray-200 rounded-xl px-4 py-3 transition-all duration-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-100 hover:border-gray-300"
                         placeholder="Masukkan nomor repair order">
                 </div>
 
-                <!-- Customer -->
+                <!-- Date in -->
                 <div class="space-y-2">
                     <label class="block text-sm font-medium text-gray-700 flex items-center">
                         <svg class="w-4 h-4 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                         </svg>
-                        Customer
+                        Date in
                     </label>
-                    <input type="text" name="customer" value="{{ old('customer') }}"
+                    <input type="text" name="Date in" value="{{ old('Date in') }}"
                         class="w-full border border-gray-200 rounded-xl px-4 py-3 transition-all duration-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-100 hover:border-gray-300"
                         placeholder="Nama customer">
                 </div>
 
-                <!-- Unit Model -->
+                <!-- Customer -->
                 <div class="space-y-2">
                     <label class="block text-sm font-medium text-gray-700 flex items-center">
                         <svg class="w-4 h-4 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                         </svg>
-                        Unit Model
+                        Customer
                     </label>
-                    <input type="text" name="unit_model" value="{{ old('unit_model') }}"
+                    <input type="text" name="Customer" value="{{ old('Customer') }}"
                         class="w-full border border-gray-200 rounded-xl px-4 py-3 transition-all duration-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-100 hover:border-gray-300"
                         placeholder="Model unit">
                 </div>
 
-                <!-- Quantity -->
+                <!-- Description -->
                 <div class="space-y-2">
                     <label class="block text-sm font-medium text-gray-700 flex items-center">
                         <svg class="w-4 h-4 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path>
                         </svg>
-                        Quantity
+                        Description
                     </label>
-                    <input type="number" name="qty" value="{{ old('qty') }}" min="1"
+                    <input type="number" name="Description" value="{{ old('Description') }}" min="1"
                         class="w-full border border-gray-200 rounded-xl px-4 py-3 transition-all duration-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-100 hover:border-gray-300"
                         placeholder="Jumlah">
                 </div>
 
-                <!-- Location -->
+                <!-- Brand part -->
                 <div class="space-y-2">
                     <label class="block text-sm font-medium text-gray-700 flex items-center">
                         <svg class="w-4 h-4 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         </svg>
-                        Location
+                        Brand part
                     </label>
-                    <input type="text" name="location" value="{{ old('location') }}"
+                    <input type="text" name="Brand part" value="{{ old('Brand part') }}"
                         class="w-full border border-gray-200 rounded-xl px-4 py-3 transition-all duration-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-100 hover:border-gray-300"
                         placeholder="Lokasi">
                 </div>
 
-                <!-- Document No -->
+                <!-- Qty -->
                 <div class="space-y-2">
                     <label class="block text-sm font-medium text-gray-700 flex items-center">
                         <svg class="w-4 h-4 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                         </svg>
-                        Document No
+                        Qty
                     </label>
-                    <input type="text" name="document_no" value="{{ old('document_no') }}"
+                    <input type="text" name="qty" value="{{ old('qty') }}"
                         class="w-full border border-gray-200 rounded-xl px-4 py-3 transition-all duration-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-100 hover:border-gray-300"
                         placeholder="Nomor dokumen">
                 </div>
 
-                <!-- Document Date -->
+                <!-- Part no -->
                 <div class="space-y-2">
                     <label class="block text-sm font-medium text-gray-700 flex items-center">
                         <svg class="w-4 h-4 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                         </svg>
-                        Document Date
+                        Part no
                     </label>
-                    <input type="date" name="document_date" value="{{ old('document_date') }}"
+                    <input type="text" name="Part no" value="{{ old('Part no') }}"
                         class="w-full border border-gray-200 rounded-xl px-4 py-3 transition-all duration-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-100 hover:border-gray-300">
                 </div>
 
-                <!-- Brand -->
+                <!-- Serial no -->
                 <div class="space-y-2">
                     <label class="block text-sm font-medium text-gray-700 flex items-center">
                         <svg class="w-4 h-4 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
                         </svg>
-                        Brand
+                        Serial no
                     </label>
-                    <input type="text" name="brand" value="{{ old('brand') }}"
+                    <input type="text" name="Serial no" value="{{ old('Serial no') }}"
                         class="w-full border border-gray-200 rounded-xl px-4 py-3 transition-all duration-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-100 hover:border-gray-300"
-                        placeholder="Brand/merk">
+                        placeholder="Serial no">
                 </div>
 
-                <!-- Engine -->
+                <!-- Code -->
                 <div class="space-y-2">
                     <label class="block text-sm font-medium text-gray-700 flex items-center">
                         <svg class="w-4 h-4 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                         </svg>
-                        Engine
+                        Code
                     </label>
-                    <input type="text" name="engine" value="{{ old('engine') }}"
+                    <input type="text" name="Code" value="{{ old('Code') }}"
                         class="w-full border border-gray-200 rounded-xl px-4 py-3 transition-all duration-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-100 hover:border-gray-300"
-                        placeholder="Tipe engine">
+                        placeholder="Code">
                 </div>
 
-                <!-- Part No Unit -->
+                <!-- Mechanic -->
                 <div class="space-y-2">
                     <label class="block text-sm font-medium text-gray-700 flex items-center">
                         <svg class="w-4 h-4 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
                         </svg>
-                        Part No Unit
+                        Mechanic
                     </label>
-                    <input type="text" name="part_no_unit" value="{{ old('part_no_unit') }}"
+                    <input type="text" name="Mechanic" value="{{ old('Mechanic') }}"
                         class="w-full border border-gray-200 rounded-xl px-4 py-3 transition-all duration-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-100 hover:border-gray-300"
                         placeholder="Nomor part unit">
                 </div>
 
                 <!-- Serial No Unit -->
-                <div class="space-y-2">
+                {{-- <div class="space-y-2">
                     <label class="block text-sm font-medium text-gray-700 flex items-center">
                         <svg class="w-4 h-4 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path>
@@ -194,10 +194,10 @@
                     <input type="text" name="serial_no_unit" value="{{ old('serial_no_unit') }}"
                         class="w-full border border-gray-200 rounded-xl px-4 py-3 transition-all duration-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-100 hover:border-gray-300"
                         placeholder="Serial number unit">
-                </div>
+                </div> --}}
 
                 <!-- Warranty -->
-                <div class="space-y-2">
+                {{-- <div class="space-y-2">
                     <label class="block text-sm font-medium text-gray-700 flex items-center">
                         <svg class="w-4 h-4 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
@@ -208,7 +208,7 @@
                         class="w-full border border-gray-200 rounded-xl px-4 py-3 transition-all duration-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-100 hover:border-gray-300"
                         placeholder="Informasi warranty">
                 </div>
-            </div>
+            </div> --}}
 
             <!-- Upload Section -->
             <div class="border-t border-gray-200 pt-8 mb-8">
@@ -389,7 +389,7 @@
             'customer',
             'unit_model',
             'qty',
-            'location'
+            'Brand part'
         ];
 
         let isValid = true;
